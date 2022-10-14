@@ -1,0 +1,1 @@
+CUDA_LAUNCH_BLOCKING=1 python finetune_bert.py -tr -bs 64 -d SNLI -tep "data/snli_1.0/snli_1.0_test.jsonl" -bt bert -bp "bert-base-uncased" -tqdm -D "cuda:0" -exp "bert_base_SNLI_regular" -nc 3 -ckpt "experiments/bert_base_SNLI_regular/model.pt" -tr
